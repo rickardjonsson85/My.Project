@@ -1,17 +1,24 @@
+div.header {
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  height: 100px;
+  background: #f17373;
+  position: fixed;
+  text-align: center;
+}
+.main {
+  margin-top: 100px;
+}
+.logodiv {
+  border-style: solid;
+  border-width: thick;
+  border-radius: 25px;
+  width: 40%;
+}
 .footer {
   text-align: center;
   border-style: solid;
-}
-div.header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  height: 100px;
-  background: #000000;
-  text-align: center;
-}
-h1.headerrub {
-  color: #ffffff;
 }
 div.slider {
   border-style: solid;

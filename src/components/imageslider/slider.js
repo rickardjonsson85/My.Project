@@ -52,9 +52,6 @@ class slider extends Component {
           <div className="slider">
             <PageNum property={property} />
           </div>
-          <div className="slider">
-            <PageNum property={property} />
-          </div>
         </div>
       );
     } else {

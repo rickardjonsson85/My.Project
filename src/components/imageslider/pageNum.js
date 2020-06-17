@@ -1,6 +1,6 @@
 import React from "react";
 const pageNum = ({ property }) => {
-  const { id, content, type, boxsize } = property;
+  const { id, content, type } = property;
 
   if (type == "other") {
     return (

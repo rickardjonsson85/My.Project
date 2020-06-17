@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import OneColumnLayout from "../pageLayouts/oneColumnLayout";
+import TitleColumnLayout from "../pageLayouts/titleColumnLayou";
 import Slider from "../imageslider/slider";
 import Header from "../common/header";
 import Footer from "../common/footer";
@@ -14,17 +14,16 @@ class home extends Component {
   render() {
     return (
       <React.Fragment>
-        <Header />
-        <br />
-        <OneColumnLayout />;
-        <Slider />
         <BrowserView>
-          <h1> This is rendered only in browser </h1>
+          <Header />
+          <div className="main">
+            <TitleColumnLayout />;
+          </div>
+          <Slider />
         </BrowserView>
         <MobileView>
           <h1> This is rendered only on mobile </h1>
         </MobileView>
-        <OneColumnLayout />
         <Footer />
       </React.Fragment>
     );
