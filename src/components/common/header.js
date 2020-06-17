@@ -5,14 +5,6 @@ class header extends Component {
     return (
       <div className="header">
         <h1>Det här är en header</h1>
-
-        <a href="#">1</a>
-
-        <a href="#">2</a>
-
-        <a href="#">3</a>
-
-        <a href="#">4</a>
       </div>
     );
   }

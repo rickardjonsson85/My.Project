@@ -10,12 +10,18 @@ div.header {
 .main {
   margin-top: 100px;
 }
-.logodiv {
+
+.logoimg {
+  width: 100%;
+}
+div.titlediv {
   border-style: solid;
   border-width: thick;
   border-radius: 25px;
-  width: 40%;
+  text-align: center;
+  padding: 40px;
 }
+
 .footer {
   text-align: center;
   border-style: solid;
