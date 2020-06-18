@@ -46,21 +46,20 @@ class slider extends Component {
       console.log("if körs gärna");
       return (
         <div>
-          <button onClick={() => this.prevImage()}>BACK</button>
-          <button onClick={() => this.nextImage()}>NEXT</button>
-          <br />
           <div className="slider">
             <PageNum property={property} />
           </div>
+          <button onClick={() => this.prevImage()}>BACK</button>
+          <button onClick={() => this.nextImage()}>NEXT</button>
         </div>
       );
     } else {
       console.log("if körs inte gärna");
       return (
         <div>
+          <PageNum property={property} />
           <button onClick={() => this.prevImage()}>BACK</button>
           <button onClick={() => this.nextImage()}>NEXT</button>
-          <PageNum property={property} />
         </div>
       );
     }

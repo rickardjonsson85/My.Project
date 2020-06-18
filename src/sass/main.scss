@@ -1,19 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
+
+h1.title {
+  font-family: "Metal Mania";
+}
 div.header {
+  border-radius: 0px 0px 25px 25px;
   width: 100%;
   top: 0;
   z-index: 1;
   height: 100px;
-  background: #f17373;
+  background: #000000;
   position: fixed;
   text-align: center;
 }
-.main {
-  margin-top: 100px;
+.headertext {
+  color: #ffffff;
 }
 
+.belowheader {
+  margin-top: 100px;
+}
+.content {
+  border-radius: 25px;
+  padding: 25px;
+  margin-left: 20%;
+  border-style: solid;
+  border-width: thick;
+  width: 60%;
+  align-content: center;
+}
 .logoimg {
   width: 100%;
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
 }
+.logoimg:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
 div.titlediv {
   border-style: solid;
   border-width: thick;
@@ -21,10 +46,19 @@ div.titlediv {
   text-align: center;
   padding: 40px;
 }
-
+.slidercenter {
+  margin-left: 100%;
+}
 .footer {
   text-align: center;
   border-style: solid;
+  margin-top: 25%;
+  color: #ffffff;
+  width: 100%;
+  background: #000000;
+}
+.footertext {
+  color: #ffffff;
 }
 div.slider {
   border-style: solid;
