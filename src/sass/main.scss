@@ -12,8 +12,6 @@ div.header {
   background: #000000;
   position: fixed;
   text-align: center;
-}
-.headertext {
   color: #ffffff;
 }
 
@@ -40,20 +38,21 @@ div.header {
 }
 
 div.titlediv {
-  border-style: solid;
-  border-width: thick;
-  border-radius: 25px;
+  background-color: white;
   text-align: center;
-  padding: 40px;
+  border-radius: 25px;
 }
+.title {
+  color: #46cad9;
+}
+
 .slidercenter {
   margin-left: 100%;
 }
 .footer {
   text-align: center;
-  border-style: solid;
   margin-top: 25%;
-  color: #ffffff;
+  position: absolute;
   width: 100%;
   background: #000000;
 }
