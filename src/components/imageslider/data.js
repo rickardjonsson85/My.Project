@@ -1,9 +1,9 @@
-import cola from "../../img/my/01.jpg";
+import born2ride from "../../img/my/b2r.png";
 
 /*
-Type: (image): image,
-
-Type: (other): <h1>example</h1>
+Type: "left" carusell set to left,
+Type: "right"  carusell set to right,
+Type: "center" carusell set to center,
 
 
 */
@@ -12,16 +12,24 @@ const data = [
   {
     id: 0,
     title: "bild1",
-    type: "image",
-    content: cola,
-    content2: "cola"
+    type: "center",
+    content: born2ride,
+    divtitle: "Born To Ride Or Not ?",
+    divcontent: "The blood will tell you if you have what it takes,"
   },
   {
     id: 1,
-    boxsize: 1,
-    content: "asdf",
-    title: "bild2",
-    type: 2
+    title: "bild1",
+    content: born2ride,
+    divtitle: "tittel",
+    divcontent: "text"
+  },
+  {
+    id: 2,
+    title: "bild1",
+    content: born2ride,
+    divtitle: "tittel",
+    divcontent: "text"
   }
 ];
 

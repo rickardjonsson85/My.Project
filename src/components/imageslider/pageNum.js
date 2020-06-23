@@ -1,22 +1,17 @@
 import React from "react";
 const pageNum = ({ property }) => {
-  const { id, content, type } = property;
+  const { id, content, divtitle, divcontent } = property;
 
-  if (type == "other") {
-    return (
-      <section id={`${id}`}>
-        <div>
-          <h1>{content}</h1>
-        </div>
-      </section>
-    );
-  } else {
-    return (
-      <div id={`{id}`}>
-        <img src={content} />
+  return (
+    <section id={`${id}`}>
+      <div className="slidercenter">
+        <img className="slidercenterimage" src={content} />
+        <br />
+        <h1>{divtitle}</h1>
+        <p1>{divcontent}</p1>
       </div>
-    );
-  }
+    </section>
+  );
 };
 
 export default pageNum;

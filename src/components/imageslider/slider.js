@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import data from "./data";
 import PageNum from "./pageNum";
+import Arrow from "../../img/Icons/arrow.svg";
 
 class slider extends Component {
   constructor(props) {
@@ -27,6 +28,7 @@ class slider extends Component {
   };
 
   prevImage = () => {
+    <Arrow />;
     let imageIndex = this.state.property.id;
     if (imageIndex == 0) {
       console.log("if körs");
@@ -49,6 +51,7 @@ class slider extends Component {
           <div className="slider">
             <PageNum property={property} />
           </div>
+
           <button onClick={() => this.prevImage()}>BACK</button>
           <button onClick={() => this.nextImage()}>NEXT</button>
         </div>

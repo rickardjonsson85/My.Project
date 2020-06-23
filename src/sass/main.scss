@@ -1,32 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
-
-h1.title {
-  font-family: "Metal Mania";
-}
 div.header {
-  border-radius: 0px 0px 25px 25px;
   width: 100%;
   top: 0;
   z-index: 1;
-  height: 100px;
+  height: 25px;
   background: #000000;
   position: fixed;
   text-align: center;
-  color: #ffffff;
+  color: #46cad9;
+  text-shadow: 2px 2px #124758;
 }
 
 .belowheader {
-  margin-top: 100px;
+  margin-top: 25px;
 }
-.content {
-  border-radius: 25px;
-  padding: 25px;
-  margin-left: 20%;
-  border-style: solid;
-  border-width: thick;
-  width: 60%;
-  align-content: center;
-}
+//*This Sections Is the Logo style section includingf the animation of the logos
 .logoimg {
   width: 100%;
   -webkit-transition: -webkit-transform 0.8s ease-in-out;
@@ -37,18 +24,21 @@ div.header {
   transform: rotate(360deg);
 }
 
+/*
+titlediv is the div that contains the title of each page
+h1.title is the color and shadow of the h1 in the title
+*/
 div.titlediv {
+  margin-top: 5%;
+  padding: 5px;
   background-color: white;
   text-align: center;
   border-radius: 25px;
-}
-.title {
-  color: #46cad9;
+  color: #52deee;
+  text-shadow: 2px 2px #124758;
+  font-size: 40px;
 }
 
-.slidercenter {
-  margin-left: 100%;
-}
 .footer {
   text-align: center;
   margin-top: 25%;
@@ -57,11 +47,33 @@ div.titlediv {
   background: #000000;
 }
 .footertext {
-  color: #ffffff;
+  color: #46cad9;
+  text-shadow: 2px 2px #124758;
 }
-div.slider {
-  border-style: solid;
-  border-width: thick;
+
+.slider {
+  width: 60%;
+  text-align: center;
+  margin-left: 20%;
   border-radius: 25px;
-  width: 40%;
+  background-color: white;
+  border-style: solid;
+  overflow: hidden;
+}
+
+.slidercenter {
+  padding: 25px;
+  background-color: white;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 50%;
+  overflow: hidden;
+}
+.slidercenterimage {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
