@@ -4,7 +4,7 @@ import launchpad from "../../img/my/launchpad.png";
 const data = [
   {
     id: 0,
-    hasbuttons: true,
+
     isbackgrund: true,
     content: born2ride,
     divtitle: "Born To Ride Or Not ?",
@@ -13,7 +13,7 @@ const data = [
 
   {
     id: 1,
-    isbackgrund: "no",
+    isbackgrund: false,
     content: launchpad,
     divtitle: "Launchpad",
     divcontent: "My weapon of choice when it comes to create music"
