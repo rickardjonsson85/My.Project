@@ -7,7 +7,10 @@ class Dyncols extends Component {
     let pageContent = vals.map((data, idx) => {
       return (
         <div key={idx} id={idx} className={data.colClass}>
-          {data.Slider},<h1>{data.title}</h1>
+          {data.Slider}
+
+          <h1>{data.title}</h1>
+          <br />
         </div>
       );
     });

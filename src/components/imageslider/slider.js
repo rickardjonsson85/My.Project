@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import data from "./data";
 import PageNum from "./pageNum";
-import Arrow from "../../img/Icons/arrow.svg";
+import Button from "./button";
 
 class slider extends Component {
   constructor(props) {
@@ -28,7 +28,6 @@ class slider extends Component {
   };
 
   prevImage = () => {
-    <Arrow />;
     let imageIndex = this.state.property.id;
     if (imageIndex == 0) {
       console.log("if körs");
@@ -44,28 +43,24 @@ class slider extends Component {
 
   render() {
     const { property } = this.state;
-    if (property.boxsize == 1) {
-      console.log("if körs gärna");
-      return (
-        <div>
-          <div className="slider">
-            <PageNum property={property} />
-          </div>
 
-          <button onClick={() => this.prevImage()}>BACK</button>
-          <button onClick={() => this.nextImage()}>NEXT</button>
-        </div>
-      );
-    } else {
-      console.log("if körs inte gärna");
-      return (
-        <div>
+    return (
+      <React.Fragment>
+        <div className="slider">
+          <Button
+            imgclasses="leftarrow"
+            buttonTitle="src/img/icons/arrow.svg"
+            todo={() => this.prevImage()}
+          />
+          <Button
+            imgclasses="rightarrow"
+            buttonTitle="src/img/icons/arrow.svg"
+            todo={() => this.nextImage()}
+          />
           <PageNum property={property} />
-          <button onClick={() => this.prevImage()}>BACK</button>
-          <button onClick={() => this.nextImage()}>NEXT</button>
         </div>
-      );
-    }
+      </React.Fragment>
+    );
   }
 }
 

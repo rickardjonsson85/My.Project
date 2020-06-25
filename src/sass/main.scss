@@ -2,7 +2,7 @@ div.header {
   width: 100%;
   top: 0;
   z-index: 1;
-  height: 25px;
+  height: 50px;
   background: #000000;
   position: fixed;
   text-align: center;
@@ -11,7 +11,7 @@ div.header {
 }
 
 .belowheader {
-  margin-top: 25px;
+  margin-top: 50px;
 }
 //*This Sections Is the Logo style section includingf the animation of the logos
 .logoimg {
@@ -28,6 +28,7 @@ div.header {
 titlediv is the div that contains the title of each page
 h1.title is the color and shadow of the h1 in the title
 */
+
 div.titlediv {
   margin-top: 5%;
   padding: 5px;
@@ -52,28 +53,45 @@ div.titlediv {
 }
 
 .slider {
-  width: 60%;
+  padding: 25px;
+  overflow: hidden;
   text-align: center;
-  margin-left: 20%;
   border-radius: 25px;
   background-color: white;
-  border-style: solid;
   overflow: hidden;
+}
+.prevbuttonstyle {
+  float: left;
 }
 
-.slidercenter {
-  padding: 25px;
-  background-color: white;
-  border-radius: 25px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  width: 50%;
-  overflow: hidden;
+.sliderbackgroundimage {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  height: 50vh;
+  padding: 15px;
 }
-.slidercenterimage {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+
+.rightarrow {
+  height: 150px;
 }
+.leftarrow {
+  height: 150px;
+  transform: scaleX(-1);
+}
+// .slidercenter {
+//   //
+//   // background-color: white;
+//   // border-radius: 25px;
+//   // margin-left: auto;
+//   // margin-right: auto;
+//   // text-align: center;
+//   // width: 50%;
+//   // overflow: hidden;
+// }
+// .slidercenterimage {
+//   width: 50%;
+//   margin-left: auto;
+//   margin-right: auto;
+//   display: block;
+// }
