@@ -4,12 +4,12 @@
   "description": "react template built from the ground up",
   "main": "webpack.config.js",
   "scripts": {
+    "instal": "npm install",
     "check-scripts": "npm-check",
     "update-scripts": "npm-check -u",
+    "installed?": "npm ls --depth=0",
     "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --config webpack.config.js --mode production",
-    "instal": "npm install",
-    "installed?": "npm ls --depth=0"
+    "build": "webpack --config webpack.config.js --mode production"
   },
   "repository": {
     "type": "git",
