@@ -4,7 +4,7 @@
   "description": "react template built from the ground up",
   "main": "webpack.config.js",
   "scripts": {
-    "instal": "npm install",
+    "install": "npm install",
     "check-scripts": "npm-check",
     "update-scripts": "npm-check -u",
     "installed?": "npm ls --depth=0",
