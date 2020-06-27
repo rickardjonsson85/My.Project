@@ -83,3 +83,13 @@ https://prettier.io/docs/en/configuration.html
 - read more
   https://www.npmjs.com/package/npm-check
   - npm i -g npm-check
+
+##
+
+## for uppcoming assignments
+
+## popper
+
+- Is used to make a popper (useful for tooltips )
+- read more https://popper.js.org/docs/v2/
+- install npm i @popperjs/core

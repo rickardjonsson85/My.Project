@@ -28,12 +28,12 @@ class slider extends Component {
   };
 
   prevImage = () => {
+    // let {property}=this.state;
+
     let imageIndex = this.state.property.id;
     if (imageIndex == 0) {
-      console.log("if körs");
       imageIndex = this.state.property.id + `${data.length}` - 1;
     } else {
-      console.log("else körs");
       imageIndex = this.state.property.id - 1;
     }
     this.setState({
@@ -52,6 +52,7 @@ class slider extends Component {
             buttonTitle="src/img/icons/arrow.svg"
             todo={() => this.prevImage()}
           />
+
           <Button
             imgclasses="rightarrow"
             buttonTitle="src/img/icons/arrow.svg"

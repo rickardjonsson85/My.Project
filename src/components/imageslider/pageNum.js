@@ -1,16 +1,9 @@
 import React from "react";
 const pageNum = ({ property }) => {
-  const {
-    id,
-    content,
-    isbackgrund,
-    hasbuttons,
-    divtitle,
-    divcontent
-  } = property;
+  const { id, content, isbackgrund, divtitle, divcontent } = property;
   console.log(isbackgrund);
 
-  if (hasbuttons == true && isbackgrund == true) {
+  if (isbackgrund == true) {
     return (
       <section id={`${id}`}>
         <div

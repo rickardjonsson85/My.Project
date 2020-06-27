@@ -9,14 +9,8 @@ const homeData = [
   },
   {
     id: 1,
-    title: "How does it work?",
-    body: (
-      <p>
-        You need to have an account on the site to be able to vote. After making
-        an account you vote for the best characters! Coming soon, categories.
-        Who is the best girl/boy. Best protagonist aso...
-      </p>
-    ),
+    title: "This is just a test for 2 col 6",
+    body: <p></p>,
     colClass: "col-6"
   }
 ];
