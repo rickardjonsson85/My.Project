@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import TitleColumnLayout from "../pageLayouts/titleColumnLayou";
 import Header from "../common/header";
 import Footer from "../common/footer";
-
 import HomeData from "../pageLayouts/homedata";
 import Sections from "../pageLayouts/sections";
+
 import {
   BrowserView,
   MobileView,

@@ -23,7 +23,7 @@ const data = [
     content: comp,
     divtitle: "Computing",
     divcontent:
-      "This is the time for information, Computing is not for everyone but it is a BIG part ofg my life "
+      "This is the time for information, Computing is not for everyone but it is a BIG part of my life "
   }
 ];
 

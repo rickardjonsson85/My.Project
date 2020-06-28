@@ -3,6 +3,7 @@ import data from "./data";
 import PageNum from "./pageNum";
 import Button from "./button";
 
+import BackButton from "../Buttons/backButton";
 class slider extends Component {
   constructor(props) {
     super(props);
@@ -28,7 +29,7 @@ class slider extends Component {
   };
 
   prevImage = () => {
-    // let {property}=this.state;
+    let { property } = this.state;
 
     let imageIndex = this.state.property.id;
     if (imageIndex == 0) {

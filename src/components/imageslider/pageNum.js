@@ -1,7 +1,6 @@
 import React from "react";
 const pageNum = ({ property }) => {
   const { id, content, isbackgrund, divtitle, divcontent } = property;
-  console.log(isbackgrund);
 
   if (isbackgrund == true) {
     return (

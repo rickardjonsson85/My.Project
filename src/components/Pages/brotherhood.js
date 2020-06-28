@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 
-class galleri extends Component {
+export class brotherhood extends Component {
   render() {
     return (
       <div>
-        <p>asdf</p>
+        <h1>brotherhood</h1>
       </div>
     );
   }
 }
 
-export default galleri;
+export default brotherhood;

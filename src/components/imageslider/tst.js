@@ -1,12 +1,3 @@
-import React, { Component } from "react";
-import "../sass/simple-grid.scss";
-import "../sass/main.scss";
-import Brotherhood from "./Pages/brotherhood";
-import Mental from "./Pages/mental";
-import HomePage from "./Pages/home";
-import history from "./common/history";
-import { Router, Switch, Route } from "react-router-dom";
-
 export default class App extends Component {
   render() {
     return (

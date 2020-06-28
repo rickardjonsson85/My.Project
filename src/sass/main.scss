@@ -10,11 +10,9 @@ div.header {
   text-shadow: 2px 2px #124758;
 }
 
-.belowheader {
-  margin-top: 50px;
-}
 //*This Sections Is the Logo style section includingf the animation of the logos
 .logoimg {
+  margin-top: 50px;
   width: 100%;
   -webkit-transition: -webkit-transform 0.8s ease-in-out;
   transition: transform 0.8s ease-in-out;
@@ -30,7 +28,7 @@ h1.title is the color and shadow of the h1 in the title
 */
 
 div.titlediv {
-  margin-top: 5%;
+  margin-top: 90px;
   padding: 5px;
   background-color: white;
   text-align: center;
@@ -53,16 +51,12 @@ div.titlediv {
 }
 
 .slider {
-  padding: 25px;
-  height: 900px;
+  max-height: 750px;
   overflow: hidden;
   text-align: center;
   border-radius: 25px;
   background-color: white;
   overflow: hidden;
-}
-.prevbuttonstyle {
-  float: left;
 }
 
 .sliderbackgroundimage {
@@ -70,15 +64,28 @@ div.titlediv {
   background-repeat: no-repeat;
   background-size: 50%;
   height: 50vh;
-  padding: 40px;
+  padding-top: 80px;
 }
 
 .rightarrow {
   height: 150px;
+  position: absolute;
+  top: 15%;
+  right: 10%;
+}
+.rightarrow:hover {
+  cursor: pointer;
+  cursor: url("/src/cur/cursor.cur"), pointer;
 }
 .leftarrow {
+  top: 15%;
+  left: 10%;
+  position: absolute;
   height: 150px;
   transform: scaleX(-1);
+}
+.leftarrow:hover {
+  cursor: url("/src/cur/cursor.cur"), pointer;
 }
 // .slidercenter {
 //   //
