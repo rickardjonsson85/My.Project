@@ -1,5 +1,5 @@
 import React from "react";
-import Slider from "../imageslider/slider";
+import Slider from "../imageslider/brotherhoodslider";
 
 const homeData = [
   {

@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Logo } from "../Pages/home";
-import { title } from "../Pages/home";
 
 class titleColumnLayout extends Component {
   render() {
+    let { title } = this.props;
     return (
       <div className="container">
         <div className="row">
@@ -14,7 +14,7 @@ class titleColumnLayout extends Component {
           </div>
           <div className="col-9">
             <div className="titlediv">
-              <h1 className="title">{title}</h1>
+              <h1 className="titleindiv">{title}</h1>
             </div>
           </div>
         </div>

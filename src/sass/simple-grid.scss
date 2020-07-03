@@ -12,13 +12,12 @@ $font-height: 1.5;
 
 html,
 body {
-  background: rgb(157, 16, 175);
+  background: rgb(0, 0, 0);
   background: linear-gradient(
     90deg,
-    rgba(157, 16, 175, 1) 0%,
-    rgba(28, 116, 142, 1) 100%
+    rgba(0, 0, 0, 1) 17%,
+    rgba(255, 0, 0, 1) 100%
   );
-  
   height: 100%;
   width: 100%;
   margin: 0;
@@ -36,33 +35,34 @@ body {
 
 // typography
 
-h1 {
-  font-size: 2.5rem;
-}
-h1.title {
-  font-family: "Metal Mania", cursive;
-  font-size: 2.5rem;
-}
+// h1 {
+//   font-size: 2.5rem;
+// }
 
-h2 {
-  font-size: 1rem;
-}
+// h1.titleandfottertext {
+//   font-family: "Metal Mania", cursive;
+//   font-size: 20rem;
+// }
 
-h3 {
-  font-size: 1.375rem;
-}
+// h2 {
+//   font-size: 1rem;
+// }
 
-h4 {
-  font-size: 1.125rem;
-}
+// h3 {
+//   font-size: 1.375rem;
+// }
 
-h5 {
-  font-size: 1rem;
-}
+// h4 {
+//   font-size: 1.125rem;
+// }
 
-h6 {
-  font-size: 0.875rem;
-}
+// h5 {
+//   font-size: 1rem;
+// }
+
+// h6 {
+//   font-size: 0.875rem;
+// }
 
 p {
   font-size: 1.125rem;

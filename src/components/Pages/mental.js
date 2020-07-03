@@ -1,13 +1,43 @@
 import React, { Component } from "react";
+import {
+  TitleColumnLayout,
+  Sections,
+  MobileTitleColumnLayout
+} from "../pageLayouts/index";
+import { Header, Footer, Headermobile } from "../common/index";
+import HomeData from "../pageLayouts/mentaldata";
+import MobileHomeData from "../pageLayouts/mobilementaldata";
+import { BrowserView, MobileView } from "react-device-detect";
 
-export class mental extends Component {
+// if you want to use another title change it "Intrests" to "whateveryouwant"
+
+export const Logo = "src/img/logos/myloggo.png";
+
+class home extends Component {
   render() {
     return (
-      <div>
-        <h1>mental</h1>
-      </div>
+      <React.Fragment>
+        <BrowserView>
+          {/* Header on this site is the top menu  */}
+          <Header />
+          {/* The titleColumnlayout is a Columnlayout in browserview : used so there will bee one rotating loggo 
+            and a square with rounded corners where te tile will be   */}
+          <TitleColumnLayout title="Mental Health" />
+          {/* The <div className="content"> is the div that cotains the content of the page  */}
+          {/* <Slider />  is a carusel containg bouth imagegaes and a div below with some text*/}
+          <Sections vals={HomeData} />
+        </BrowserView>
+        {/* ========== BELOW THIS LINE IS FOR MOBILE VIEW========== */}
+        <MobileView>
+          <Headermobile />
+          <MobileTitleColumnLayout title="Mental Health" />
+          <Sections vals={MobileHomeData} />
+        </MobileView>
+        {/* ========== ABOVE THIS LINE IS FOR MOBILE VIEW========== */}
+        <Footer />
+      </React.Fragment>
     );
   }
 }
 
-export default mental;
+export default home;

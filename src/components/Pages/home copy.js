@@ -5,7 +5,7 @@ import {
   MobileTitleColumnLayout
 } from "../pageLayouts/index";
 import { Header, Footer, Headermobile } from "../common/index";
-import HomeData from "../pageLayouts/brotherhooddata";
+import HomeData from "../pageLayouts/homedata";
 import { BrowserView, MobileView } from "react-device-detect";
 
 // if you want to use another title change it "Intrests" to "whateveryouwant"
@@ -20,8 +20,8 @@ class home extends Component {
           {/* Header on this site is the top menu  */}
           <Header />
           {/* The titleColumnlayout is a Columnlayout in browserview : used so there will bee one rotating loggo 
-          and a square with rounded corners where te tile will be   */}
-          <TitleColumnLayout title="Brotherhood" />
+            and a square with rounded corners where te tile will be   */}
+          <TitleColumnLayout title="Intrests" />
           {/* The <div className="content"> is the div that cotains the content of the page  */}
           {/* <Slider />  is a carusel containg bouth imagegaes and a div below with some text*/}
           <Sections vals={HomeData} />
@@ -30,7 +30,7 @@ class home extends Component {
         {/* ========== BELOW THIS LINE IS FOR MOBILE VIEW========== */}
         <MobileView>
           <Headermobile />
-          <MobileTitleColumnLayout title="Brotherhood" />
+          <MobileTitleColumnLayout title="Intrests" />
           <Sections vals={HomeData} />
         </MobileView>
         {/* ========== ABOVE THIS LINE IS FOR MOBILE VIEW========== */}

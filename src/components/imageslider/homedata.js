@@ -1,6 +1,7 @@
 import born2ride from "../../img/my/b2r.png";
 import launchpad from "../../img/my/launchpad.png";
 import comp from "../../img/my/comp.png";
+
 const data = [
   {
     id: 0,

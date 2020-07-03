@@ -8,8 +8,8 @@ class Dyncols extends Component {
       return (
         <div key={idx} id={idx} className={data.colClass}>
           {data.Slider}
-
-          <h1>{data.title}</h1>
+          {data.title}
+          {data.body}
           <br />
         </div>
       );

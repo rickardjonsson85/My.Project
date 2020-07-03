@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import data from "./homedata";
+import data from "./mentaldataslider";
 import title from "../pageLayouts/titleColumnLayout";
 import PageNum from "./pageNum";
 import Button from "../common/button";
@@ -47,15 +47,15 @@ class slider extends Component {
 
     return (
       <React.Fragment>
-        <div className="slider">
+        <div className="mentalslider">
           <Button
-            imgclasses="leftarrow"
+            imgclasses="mentalleftarrow"
             buttonTitle="src/img/icons/arrow.svg"
             todo={() => this.prevImage()}
           />
 
           <Button
-            imgclasses="rightarrow"
+            imgclasses="mentalrightarrow"
             buttonTitle="src/img/icons/arrow.svg"
             todo={() => this.nextImage()}
           />

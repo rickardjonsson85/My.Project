@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import data from "./homedata";
+import data from "./brotherhooddataslider";
 import title from "../pageLayouts/titleColumnLayout";
 import PageNum from "./pageNum";
 import Button from "../common/button";
@@ -29,7 +29,7 @@ class slider extends Component {
   };
 
   prevImage = () => {
-    let { property } = this.state;
+    // let { property } = this.state;
 
     let imageIndex = this.state.property.id;
     if (imageIndex == 0) {
@@ -47,15 +47,15 @@ class slider extends Component {
 
     return (
       <React.Fragment>
-        <div className="slider">
+        <div className="brotherhoodslider">
           <Button
-            imgclasses="leftarrow"
+            imgclasses="brotherleftarrow"
             buttonTitle="src/img/icons/arrow.svg"
             todo={() => this.prevImage()}
           />
 
           <Button
-            imgclasses="rightarrow"
+            imgclasses="brotherrightarrow"
             buttonTitle="src/img/icons/arrow.svg"
             todo={() => this.nextImage()}
           />

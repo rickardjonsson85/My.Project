@@ -34,13 +34,12 @@ class navigation extends Component {
 
     let { open, path } = this.state;
     return (
-      <header className="header">
+      <header className="headermobile">
         {/* <div className="container"> */}
-        <div
-          id="nav-icon"
-          className={open ? "open" : "closed"}
-          onClick={this.animateMenu}
-        >
+
+        <div className={open ? "open" : "closed"} onClick={this.animateMenu}>
+          <img className="menuloggo" src="/src/img/logos/myloggo.png" />
+          <h1 className="mobiletext">Menu</h1>
           <span></span>
           <span></span>
           <span></span>
@@ -51,57 +50,37 @@ class navigation extends Component {
             if (path === "/") {
               return (
                 <Link className="active" to="/">
-                  <span className="home-icon" />
                   Home
                 </Link>
               );
             } else {
-              return (
-                <Link to="/">
-                  <span className="home-icon" />
-                  Home
-                </Link>
-              );
+              return <Link to="/">Home</Link>;
             }
           })()}
-
           {(() => {
-            if (path === "/projects") {
+            if (path === "/mental") {
               return (
-                <Link className="active" to="/projects">
-                  <span className="projects-icon" />
-                  Projects
+                <Link className="active" to="/mental">
+                  Mental Health
                 </Link>
               );
             } else {
-              return (
-                <Link to="/projects">
-                  <span className="projects-icon" />
-                  Projects
-                </Link>
-              );
+              return <Link to="/mental">Mental Health</Link>;
             }
           })()}
-
           {(() => {
-            if (path === "/gallery") {
+            if (path === "/brotherhood") {
               return (
-                <Link className="active" to="/gallery">
-                  <span className="gallery-icon" />
-                  Gallery
+                <Link className="active" to="/brotherhood">
+                  Brotherhood
                 </Link>
               );
             } else {
-              return (
-                <Link to="/gallery">
-                  <span className="gallery-icon" />
-                  Gallery
-                </Link>
-              );
+              return <Link to="/brotherhood">Brotherhood</Link>;
             }
           })()}
+          <h1>CLOSE MENU</h1>
         </nav>
-        <ScrollToTop />
       </header>
     );
   }

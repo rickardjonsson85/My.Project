@@ -1,11 +1,9 @@
 import React, { Component } from "react";
-import "../sass/simple-grid.scss";
 import "../sass/main.scss";
-import Brotherhood from "./Pages/brotherhood";
-import Mental from "./Pages/mental";
-import HomePage from "./Pages/home";
+import { Home, Mental, Brotherhood } from "./Pages/index";
 import history from "./common/history";
 import { Router, Switch, Route } from "react-router-dom";
+
 
 export default class App extends Component {
   render() {
@@ -19,7 +17,7 @@ export default class App extends Component {
             <Route
               path="/"
               exact
-              render={(props) => <HomePage {...props} />}
+              render={(props) => <Home {...props} />}
             />{" "}
             <Route path="/mental" render={(props) => <Mental {...props} />} />{" "}
             <Route
