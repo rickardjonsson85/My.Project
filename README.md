@@ -84,12 +84,10 @@ https://prettier.io/docs/en/configuration.html
   https://www.npmjs.com/package/npm-check
   - npm i -g npm-check
 
-##
+## Device detect
 
-## for uppcoming assignments
+-simple way of detect browser/mobile
 
-## popper
+- read more
 
-- Is used to make a popper (useful for tooltips )
-- read more https://popper.js.org/docs/v2/
-- install npm i @popperjs/core
+  - npm i react-device-detect

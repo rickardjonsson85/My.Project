@@ -4,7 +4,6 @@ import { Home, Mental, Brotherhood } from "./Pages/index";
 import history from "./common/history";
 import { Router, Switch, Route } from "react-router-dom";
 
-
 export default class App extends Component {
   render() {
     return (

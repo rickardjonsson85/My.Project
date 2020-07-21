@@ -3,7 +3,6 @@ import data from "./mentaldataslider";
 import title from "../pageLayouts/titleColumnLayout";
 import PageNum from "./pageNum";
 import Button from "../common/button";
-import { BrowserView, MobileView } from "react-device-detect";
 
 class slider extends Component {
   constructor(props) {
@@ -49,34 +48,18 @@ class slider extends Component {
     return (
       <React.Fragment>
         <div className="mentalslider">
-          <BrowserView>
-            {" "}
-            <Button
-              imgclasses="mentalleftarrow"
-              buttonTitle="src/img/icons/arrow.svg"
-              todo={() => this.prevImage()}
-            />
-            <Button
-              imgclasses="mentalrightarrow"
-              buttonTitle="src/img/icons/arrow.svg"
-              todo={() => this.nextImage()}
-            />
-            <PageNum property={property} />
-          </BrowserView>
-          <MobileView>
-            {" "}
-            <Button
-              imgclasses="mobilementalleftarrow"
-              buttonTitle="src/img/icons/arrow.svg"
-              todo={() => this.prevImage()}
-            />
-            <Button
-              imgclasses="mobilementalrightarrow"
-              buttonTitle="src/img/icons/arrow.svg"
-              todo={() => this.nextImage()}
-            />
-            <PageNum property={property} />
-          </MobileView>
+          <Button
+            imgclasses="mobilementalleftarrow"
+            buttonTitle="src/img/icons/arrow.svg"
+            todo={() => this.prevImage()}
+          />
+
+          <Button
+            imgclasses="mobilementalrightarrow"
+            buttonTitle="src/img/icons/arrow.svg"
+            todo={() => this.nextImage()}
+          />
+          <PageNum property={property} />
         </div>
       </React.Fragment>
     );

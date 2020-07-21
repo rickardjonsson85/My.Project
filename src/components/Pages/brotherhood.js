@@ -8,8 +8,6 @@ import { Header, Footer, Headermobile } from "../common/index";
 import HomeData from "../pageLayouts/brotherhooddata";
 import { BrowserView, MobileView } from "react-device-detect";
 
-// if you want to use another title change it "Intrests" to "whateveryouwant"
-
 export const Logo = "src/img/logos/myloggo.png";
 
 class home extends Component {
@@ -19,18 +17,16 @@ class home extends Component {
         <BrowserView>
           {/* Header on this site is the top menu  */}
           <Header />
-          {/* The titleColumnlayout is a Columnlayout in browserview : used so there will bee one rotating loggo 
-          and a square with rounded corners where te tile will be   */}
-          <TitleColumnLayout title="Brotherhood" />
-          {/* The <div className="content"> is the div that cotains the content of the page  */}
-          {/* <Slider />  is a carusel containg bouth imagegaes and a div below with some text*/}
+          {/* Title to specefy the site */}
+          <TitleColumnLayout title="brotherhoods" />
           <Sections vals={HomeData} />
-          <Footer />
         </BrowserView>
         {/* ========== BELOW THIS LINE IS FOR MOBILE VIEW========== */}
         <MobileView>
           <Headermobile />
-          <MobileTitleColumnLayout title="Brotherhood" />
+          <a href="#">
+            <MobileTitleColumnLayout title="Brotherhoods" />
+          </a>
           <Sections vals={HomeData} />
         </MobileView>
         {/* ========== ABOVE THIS LINE IS FOR MOBILE VIEW========== */}

@@ -1,3 +1,4 @@
+// just a index file for export
 import Button from "./button";
 import Footer from "./footer";
 import Header from "./header";

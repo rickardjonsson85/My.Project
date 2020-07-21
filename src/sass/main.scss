@@ -3,7 +3,14 @@
 @import "simple-grid", "menu";
 
 //*This Sections Is the Logo style section includingf the animation of the logos
-
+.sliderbrotherhood {
+  padding: 30px;
+  text-align: center;
+  background-color: white;
+  border-radius: 25px;
+  background-size: 50px;
+  height: 250px;
+}
 .logoimg {
   margin-top: 130px;
   width: 100%;
@@ -36,10 +43,10 @@
   height: 250px;
 }
 .mentalrightarrow {
-  height: 50px;
+  height: 80px;
   position: absolute;
   top: 70%;
-  right: 5%;
+  right: 10%;
 }
 .mentalrightarrow:hover {
   cursor: pointer;
@@ -49,12 +56,35 @@
   top: 70%;
   left: 60%;
   position: absolute;
-  height: 50px;
+  height: 80px;
   transform: scaleX(-1);
 }
 .mentalleftarrow:hover {
   cursor: url("/src/cur/cursor.cur"), pointer;
 }
+/*##################Specifik button to mobile#########################*/
+.mobilementalrightarrow {
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  right: 25%;
+}
+.mobilementalrightarrow:hover {
+  cursor: pointer;
+  cursor: url("/src/cur/cursor.cur"), pointer;
+}
+.mobilementalleftarrow {
+  top: 50%;
+  left: 25%;
+  position: absolute;
+  height: 50px;
+  transform: scaleX(-1);
+}
+.mobilementalleftarrow:hover {
+  cursor: url("/src/cur/cursor.cur"), pointer;
+}
+
+/*###########################################*/
 
 /*
 titlediv is the div that contains the title of each page
@@ -88,7 +118,7 @@ div.titlediv {
 }
 
 .slider {
-  max-height: 900px;
+  height: 682px;
   overflow: hidden;
   text-align: center;
   border-radius: 25px;
@@ -124,18 +154,16 @@ div.titlediv {
 }
 
 .sliderbackgroundimage {
-  overflow: hidden;
+  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 50%;
-  height: 500px;
-  padding-top: 80px;
 }
 
 .rightarrow {
   height: 150px;
   position: absolute;
-  top: 20%;
+  top: 30%;
   right: 10%;
 }
 .rightarrow:hover {
@@ -143,7 +171,7 @@ div.titlediv {
   cursor: url("/src/cur/cursor.cur"), pointer;
 }
 .leftarrow {
-  top: 20%;
+  top: 30%;
   left: 10%;
   position: absolute;
   height: 150px;

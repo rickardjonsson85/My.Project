@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-class navigation extends Component {
+class header extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -84,4 +84,4 @@ class navigation extends Component {
     );
   }
 }
-export default navigation;
+export default header;

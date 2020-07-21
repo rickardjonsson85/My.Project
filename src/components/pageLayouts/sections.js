@@ -3,15 +3,13 @@ import DynCols from "./dyncols";
 
 class Sections extends Component {
   render() {
-    let { vals, backgroundColor, padding } = this.props;
+    let { vals } = this.props;
 
     console.log("vals : " + vals);
 
-    let paddingLocal = padding ? padding : "";
-    let backgroundColorLocal = backgroundColor ? backgroundColor : "";
     return (
-      <section className={backgroundColorLocal + " " + paddingLocal}>
-        <div className="container">
+      <section>
+        <div>
           <DynCols vals={vals} />
         </div>
       </section>

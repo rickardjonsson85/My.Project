@@ -20,11 +20,8 @@ class home extends Component {
         <BrowserView>
           {/* Header on this site is the top menu  */}
           <Header />
-          {/* The titleColumnlayout is a Columnlayout in browserview : used so there will bee one rotating loggo 
-            and a square with rounded corners where te tile will be   */}
+          {/* Title to specefy the site */}
           <TitleColumnLayout title="Mental Health" />
-          {/* The <div className="content"> is the div that cotains the content of the page  */}
-          {/* <Slider />  is a carusel containg bouth imagegaes and a div below with some text*/}
           <Sections vals={HomeData} />
         </BrowserView>
         {/* ========== BELOW THIS LINE IS FOR MOBILE VIEW========== */}
